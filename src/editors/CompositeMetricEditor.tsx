@@ -59,8 +59,8 @@ export const CompositeMetricEditor: React.FC<StandardEditorProps<CompositeMetric
     const memberOptions = (currentValue: string) =>
       context.data?.map((m, i) => {
         return (
-          <option key={`${m.name}-${i}`} selected={m.name === currentValue} value={m.name}>
-            {m.name}
+          <option key={`${m.refId}-${i}`} selected={m.refId === currentValue} value={m.refId}>
+            {m.refId}
           </option>
         );
       });
